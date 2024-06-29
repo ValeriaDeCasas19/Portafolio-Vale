@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0;
+    color: #333;
+}
+.grid-experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.code-section {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.code-section h3 {
+    margin-top: 0;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-item label {
+    font-size: 0.9em;
+    color: #333;
+}
+.input-item input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-item button {
+    padding: 10px;
+    border: none;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input-item button:hover {
+    background-color: #005bb5;
+}
+.project-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.project-section h3 {
+    margin-top: 0;
+}
+.project-section p {
+    margin: 10px 0;
+    color: #333;
+}
+.project-section .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.project-section .btn:hover {
+    background-color: #005bb5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .grid, .grid-experience {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .card img {
+        max-width: 80px;
+    }
+    .card p {
+        font-size: 0.9em;
+    }
+    .code-section, .project-section {
+        padding: 15px;
+    }
+    .input-item input, .input-item button {
+        padding: 8px;
+    }
+    .project-section .btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid, .grid-experience {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .card img {
+        max-width: 60px;
+    }
+    .card p {
+        font-size: 0.8em;
+    }
+    .code-section, .project-section {
+        padding: 10px;
+    }
+    .input-item input, .input-item button {
+        padding: 6px;
+    }
+    .project-section .btn {
+        padding: 6px 12px;
+    }
+}
